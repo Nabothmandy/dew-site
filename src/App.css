@@ -1,0 +1,631 @@
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500&family=Manrope:wght@400;500;600&display=swap");
+
+
+/* =========== BASICS =========== */
+
+*{
+    margin:0;
+    padding: 0;
+    list-style-type: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+   
+}
+
+body {
+  font-family: "Jost", sans-serif;
+  font-weight: 300;
+  background-color: #F4EFE8;
+  color: #2A201B;
+}
+/* TOP BAR */
+.dw-topbar {
+  width: 100%;
+  background-color: #2A201B;
+  text-transform: uppercase;
+}
+.dw1-topbar {
+  width: 90%;
+  margin: auto;
+  padding: 1%;
+}
+.dw1-topbar p {
+  text-align: center;
+  color: #F4EFE8;
+  font-size: 13px;
+  letter-spacing: 0.2em;
+}
+/* HEADER */
+.dw-header {
+   width: 100%;
+   border-bottom: 1px solid #DDD3C6;
+}
+.dw-header a:not(.dw-logo){
+  color: #2A201B;
+  font-size: 14px;
+}
+.dw1-header {
+   width: 90%;
+  margin: auto;
+   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2%;
+}
+.dw-nav {
+ display: flex;
+ gap: 33px;
+ text-transform: uppercase;
+ 
+}
+.dw-logo {
+  font-family: "Bodoni Moda", serif;
+  font-weight: 400;
+  font-size: 30px;
+  letter-spacing: 0.5em;
+  color: #2A201B;
+  animation: dwSpace 1.8s ease forwards;
+
+}
+
+@keyframes dwSpace {
+  from {
+    letter-spacing: 0.1em;
+    padding-left: 0.1em;
+    opacity: 0;
+  }
+  to {
+    letter-spacing: 0.5em;
+    padding-left: 0.5em;
+    opacity: 1;
+  }
+}
+.dw-right {
+ display: flex;
+ gap: 30px;
+ text-transform: uppercase;
+}
+.dw-hide {}
+
+/* HERO */
+.dw-hero {
+  width: 100%;
+}
+.dw1-hero {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  gap: 65px;
+}
+.dw-hero-photo {
+  width: 50%;
+  height: 600px;
+  background: radial-gradient(70% 60% at 40% 40%, #EADFD1, #D9CBB8);
+  position: relative;
+}
+.dw-zoom {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.dw-hero-tag {
+ position: absolute;
+ bottom: 40px;
+ left: 40px;
+ font-size: 13px;
+ letter-spacing: 0.2em;
+ text-transform: uppercase;
+ font-weight: bold;
+ color: #2A201B;
+white-space: nowrap;
+font-family: "Jost", sans-serif;
+}
+
+.dw-hero-text {
+  width: 50%;
+  margin-top: 7%;
+}
+.dw-label {
+  color: #2A201B;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 12px;
+  margin-bottom: 2%;
+  font-weight: 400;
+}
+.dw-h1 {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 300;
+  font-size: 82px;
+  line-height: 1.04;
+  letter-spacing: -0.01em;
+  color: #2A201B;
+}
+.dw-h1 em{
+  font-style: italic;
+  font-weight: 300;
+}
+.dw-line {
+  display: block;
+  overflow: hidden;
+}
+.dw-line > span {
+  display: block;
+  transform: translateY(105%);
+  animation: dwRise 1.2s ease forwards;
+}
+.dw-line:nth-child(2) > span {
+  animation-delay: 0.15s;
+}
+.dw-line:nth-child(3) > span {
+  animation-delay: 0.3s;
+}
+@keyframes dwRise {
+  to {
+    transform: translateY(0);
+  }
+}
+.dw-body {
+  padding-top: 2%;
+  color: #2A201B;
+  font-family: "Bodoni Moda", serif;
+}
+.dw-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 4%;
+}
+.dw-dark {
+  background: #2A201B;
+  color: #F4EFE8;
+}
+.dw-btn{
+  padding: 14px 34px;
+  font-family:  "Bodoni Moda", serif;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  border: 1px solid #2A201B;
+  font-size: 11px;
+  background-image: linear-gradient(#7E5E40, #7E5E40);
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  transition: background-size 0.5s ease, color 0.4s, border-color 0.4s;
+}
+.dw-dark:hover {
+  background: #7E5E40;
+  border-color: #7E5E40;
+  background-size: 100% 100%;
+}
+
+.dw-light {
+  background: transparent;
+  color: #2A201B;
+}
+
+.dw-light:hover {
+  background: #2A201B;
+  color: #F4EFE8;
+}
+
+/* PHILOSOPHY */
+.dw-philo {
+  width: 100%;
+}
+.dw1-philo {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  padding-top: 4%;
+  animation: dwBreathe 6s ease-in-out infinite;
+}
+@keyframes dwBreathe {
+  0%, 100% {
+    opacity: 0.55;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+.dw-statement {
+  width: 50%;
+  margin: 0 auto;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 1.3;
+  color: #2A201B;
+}
+
+/* RITUAL FINDER */
+.dw-ritual {
+  width: 100%;
+  margin-top: 3%;
+  background-color: #2A201B;
+  color: #F4EFE8;
+}
+.dw1-ritual {
+  width: 90%;
+  margin: auto;
+}
+.dw-ritual-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.dw-ritual-title {
+  width: 30%;
+  margin-top: 3%;
+}
+.dw-label1{
+ text-transform: uppercase;
+ font-size: 12px;
+ letter-spacing: 0.1em;
+  color: #D9CBB8;
+  padding-bottom: 3%;
+
+}
+.dw-h2 {
+  
+  font-weight: 300;
+  font-size: 35px;
+  line-height: 1.05;
+   font-family: "Bodoni Moda", serif;
+}
+.dw-tabs {
+  display: flex;
+  gap: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+.dw-tab {
+  height: 40px;
+  background: none;
+  border: none;
+  font-family:"Jost", sans-serif ;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #A8998A;
+  cursor: pointer;
+  border-bottom: 1px solid transparent;
+  transition: color 0.3s, border-color 0.3s;
+}
+.dw-tab.on {
+  color: #F4EFE8;
+  border-bottom-color: #C9AE8E;
+}
+.dw-note {
+ font-family: "Cormorant Garamond", serif;  
+ padding-top: 2%;
+ font-style: italic;
+ color: #D9CBB8;
+ padding-bottom: 2%;
+ border-bottom: 1px solid #4A3E36;
+}
+.dw-steps {
+  padding-top:2% ;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.dw-step {
+  width: 30%;
+   animation: dwIn 0.9s ease;
+}
+
+@keyframes dwIn {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.dw-step-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.dw-num {
+  line-height: 1;
+  color: #C9AE8E;
+  font-size: 40px;
+  font-family: "Cormorant Garamond", serif; 
+}
+.dw-label2{
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 12px;
+  font-weight: 400;
+  color: #C9AE8E;
+}
+.dw-step-photo {
+  margin-top: 2%;
+  height: 450px;
+  overflow: hidden;
+  background-color: #2A201B;
+}
+.dw-step-photo img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  animation: dwPhoto 1.4s ease;
+}
+@keyframes dwPhoto {
+  from {
+    opacity: 0;
+    transform: scale(1.1);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.dw-step-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-top: 22px;
+}
+
+.dw-step-name {
+  font-size: 19px;
+   color: #D9CBB8;
+   font-family: "Cormorant Garamond", serif;
+    padding-top: 2%;  
+}
+
+.dw-price {
+  font-size: 17px;
+  color: #D9CBB8;
+   font-family: "Cormorant Garamond", serif; 
+   display: flex;
+   
+}
+
+.dw-step-why {
+  font-size: 14px;
+  line-height: 1.8;
+  color: #B8A895;
+   font-family: "Cormorant Garamond", serif; 
+   
+}
+.dw-ritual-foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 4%;
+  padding-top: 2%;
+  border-top: 1px solid #4A3E36;
+  padding-bottom: 3%;
+}
+
+.dw-total {
+  font-size: 14px;
+  color: #B8A895;
+}
+
+.dw-total span {
+  margin-left: 16px;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 28px;
+  color: #F4EFE8;
+}
+
+.dw-cream {
+  background: #F4EFE8;
+  color: #2A201B;
+  border-color: #F4EFE8;
+}
+
+.dw-cream:hover {
+  background: transparent;
+  color: #F4EFE8;
+}
+
+/* BESTSELLERS */
+.dw-shop {
+  width: 100%;
+}
+.dw1-shop {
+  width: 90%;
+  margin: auto;
+  padding-bottom: 3%;
+}
+
+.dw-shop-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 35px;
+  margin-top: 35px;
+}
+.dw-h21{
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1.05;
+   font-family: "Bodoni Moda", serif;
+   padding-top: 9%;
+  }
+.dw-viewall {
+  font-family: "Jost", sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: #2A201B;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #2A201B;
+}
+
+.dw-products {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dw-prod {
+  width: 23%;
+  text-decoration: none;
+  color: #2A201B;
+}
+
+.dw-prod-photo {
+  height: 400px;
+  background: #EAE2D7;
+  overflow: hidden;
+  transition: background 0.5s;
+}
+
+.dw-prod-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.dw-prod:hover .dw-prod-photo img {
+  transform: scale(1.05);
+}
+
+.dw-prod-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-top: 22px;
+}
+
+.dw-prod-name {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 19px;
+}
+
+.dw-prod .dw-label {
+  
+  font-size: 10px;
+  color: #6E6259;
+}
+.dw-price{
+  font-size: 17px;
+  color:  #6E6259;;
+   font-family: "Cormorant Garamond", serif; 
+   }
+
+/* INGREDIENTS */
+.dw-ingr {
+  width: 100%;
+}
+
+.dw1-ingr {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 2%;
+  border-top: 1px solid #2A201B;
+}
+
+.dw-ingr-title {
+  width: 36%;
+}
+.dw-h22{
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 1.05;
+   font-family: "Bodoni Moda", serif;
+   padding-top: 9%;
+  }
+
+.dw-ingr-list {
+  width: 56%;
+}
+.dw-ingr-row {
+  display: flex;
+  align-items: baseline;
+  padding: 26px 0;
+  border-bottom: 1px solid #DDD3C6;
+  transition: padding-left 0.4s ease;
+}
+
+.dw-ingr-row:hover {
+  padding-left: 14px;
+}
+
+.dw-ingr-row .dw-num {
+  width: 10%;
+  font-size: 22px;
+  color: #7E5E40;
+}
+
+.dw-ingr-name {
+  width: 50%;
+  font-size: 25px;
+}
+
+.dw-ingr-does {
+  width: 40%;
+  text-align: right;
+  font-size: 14px;
+  color: #6E6259;
+}
+
+/* FOOTER */
+.dw-footer {
+  width: 100%;
+  padding: 90px 0 34px;
+  background: #2A201B;
+  color: #F4EFE8;
+}
+
+.dw1-footer {
+  width: 90%;
+  margin: auto;
+}
+
+.dw-foot-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #4A3E36;
+}
+
+.dw-foot-logo {
+  width: 50%;
+  margin: 0;
+  font-size: 100px;
+  line-height: 0.85;
+  letter-spacing: 0.3em;
+}
+
+.dw-foot-contact {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-size: 14px;
+}
+
+.dw-foot-contact a,
+.dw-foot-contact span {
+  color: #D9CBB8;
+  
+}
+
+.dw-foot-contact a:hover {
+  color: #F4EFE8;
+}
+
+.dw-copy {
+  margin: 26px 0 0;
+  font-family: "Jost", sans-serif;
+  font-size: 10px;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: #A8998A;
+}
